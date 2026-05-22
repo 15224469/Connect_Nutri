@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <title>ConnectNutri</title>
+    <link rel="icon" href="./img/logo.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="./img/logo.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<script type="module" src="index.js" defer></script>
+
+<body>
+    <main class="container">
+        <form id="loginForm">
+
+            <image src="./img/Logobonita.png" alt="Logo ConnectNutri" class="logoprincipal">
+
+            <div class="input-box">
+                <input placeholder="Email" type="email" name="email" id="email" required>
+                <i class="bx bxs-user"></i>              
+            </div>
+
+            <div class="input-box">
+                <input placeholder="Senha" type="password" name="senha" id="senha" required>
+                <i class='bx bxs-hide' id="togglePassword"></i>             
+            </div>
+
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox">
+                    Lembrar senha
+                </label>
+
+                <a href="#">Esqueci a senha</a>
+            </div>
+            
+            <button type="submit" class="login">Login</button>
+            
+            <button type="button" class="register" onclick="location.href='cadastro.html'">
+                Cadastre-se
+            </button>
+
+        </form>
+    </main>
+
+    <div class="gradient-box"></div>
+</body>
+</html>

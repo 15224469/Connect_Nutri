@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Agendamento</title>
+
+    <link rel="icon" href="./img/logo.png" type="image/png" sizes="32x32">
+
+    <link rel="icon" href="./img/logo.png" type="image/png" sizes="192x192">
+
+    <link rel="apple-touch-icon" href="./img/logo.png">
+
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+
+    <link rel="stylesheet" href="agendamento.css">
+
+</head>
+
+<body class="agendamento-body">
+
+    <script type="module" src="agendamento.js"></script>
+
+    <header class="main-header">
+
+        <div class="header-left">
+
+            <a href="#">
+                <img
+                    src="./img/Logobonita.png"
+                    alt="Logo ConnectNutri"
+                    class="logoprincipal">
+            </a>
+
+            <nav class="main-menu">
+
+                <a href="agendamento.html" class="menu-item" id="menu-inicio">
+                    <img src="./img/Inicio.png" alt="Ícone de Início">
+                    <span>INÍCIO</span>
+                </a>
+
+                <a href="telasuporte.html" class="menu-item" id="menu-suporte">
+                    <img src="./img/Suporte.png" alt="Ícone de Suporte">
+                    <span>SUPORTE</span>
+                </a>
+
+                <a href="consultas.html" class="menu-item" id="menu-consultas">
+                    <img src="./img/Calendario.png" alt="Ícone de Consultas">
+                    <span>CONSULTAS</span>
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="container">
+
+            <!-- CALENDÁRIO -->
+
+            <div id="calendar"></div>
+
+            <!-- HORÁRIOS -->
+
+            <div class="time-slots-container" style="display:none;">
+
+                <h2>Horários Disponíveis</h2>
+
+                <div id="time-slots"></div>
+
+            </div>
+
+            <!-- DETALHES -->
+
+            <div class="appointment-details">
+
+                <h2>Detalhes do Agendamento</h2>
+
+                <!-- NOME -->
+
+                <div class="form-group">
+
+                    <label for="nome-paciente">
+
+                        Nome do Paciente:
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome-paciente"
+                        class="form-control"
+                        placeholder="Digite seu nome completo">
+
+                </div>
+
+                <!-- TIPO -->
+
+                <div class="form-group">
+
+                    <label for="appointment-type">
+
+                        Tipo de Atendimento:
+
+                    </label>
+
+                    <select
+                        id="appointment-type"
+                        name="appointment-type"
+                        class="form-control">
+
+                        <option value="" disabled selected>
+                            Selecione o tipo
+                        </option>
+
+                        <option value="Nutrição para Criança">
+                            Nutrição para Criança
+                        </option>
+
+                        <option value="Nutrição para Adolescente">
+                            Nutrição para Adolescente
+                        </option>
+
+                        <option value="Nutrição para Adulto">
+                            Nutrição para Adulto
+                        </option>
+
+                        <option value="Nutrição para Gestante">
+                            Nutrição para Gestante
+                        </option>
+
+                        <option value="Nutrição para Idoso">
+                            Nutrição para Idoso
+                        </option>
+
+                        <option value="Nutrição Esportiva">
+                            Nutrição Esportiva
+                        </option>
+
+                        <option value="Paciente com comorbidade">
+                            Paciente com comorbidade
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <!-- MOTIVO -->
+
+                <div class="form-group">
+
+                    <label for="motivo-consulta">
+
+                        Por que você deseja se consultar?
+
+                    </label>
+
+                    <textarea
+                        id="motivo-consulta"
+                        class="form-control textarea-control"
+                        rows="5"
+                        placeholder="Descreva seu objetivo, dificuldade ou necessidade...">
+                    </textarea>
+
+                </div>
+
+                <!-- DATA -->
+
+                <div class="selected-date-info">
+
+                    <strong>Data Selecionada:</strong>
+
+                    <span id="selected-date">
+
+                        Nenhuma
+
+                    </span>
+
+                </div>
+
+                <!-- BOTÃO -->
+
+                <button
+                    class="confirm-button"
+                    onclick="salvarAgendamento()">
+
+                    Confirmar Agendamento
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

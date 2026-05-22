@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:#57b84e;
+    padding-top:110px;
+}
+
+/* ================= HEADER ================= */
+
+.main-header{
+    width:100%;
+    height:85px;
+    background:#ffffff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 40px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+.header-left{
+    display:flex;
+    align-items:center;
+}
+
+.logoprincipal{
+    width:100px;
+    height:auto;
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+    width:100%;
+    max-width:850px;
+    margin:30px auto;
+    background:#ffffff;
+    border-radius:25px;
+    padding:50px 40px;
+    box-shadow:0 12px 35px rgba(0,0,0,0.10);
+    text-align:center;
+    position:relative;
+}
+
+/* ================= Botão Cancelar ================= */
+.cancel-button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    background:#e74c3c;
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:12px 20px;
+    border-radius:14px;
+
+    font-size:14px;
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.cancel-button:hover{
+    background:#c0392b;
+    transform:translateY(-2px);
+}
+
+.cancel-button img{
+    width:18px;
+    height:18px;
+}
+
+/* ================= VOLTAR ================= */
+
+.back-arrow{
+    position:absolute;
+    top:25px;
+    left:25px;
+}
+
+.back-arrow img{
+    width:45px;
+    cursor:pointer;
+    transform:rotate(180deg);
+    transition:0.3s;
+}
+
+.back-arrow img:hover{
+    transform:rotate(180deg) scale(1.05);
+}
+
+/* ================= TEXTO ================= */
+
+.support-content h1{
+    font-size:34px;
+    color:#43b849;
+    margin-bottom:40px;
+    font-weight:600;
+}
+
+/* ================= LINK FORM ================= */
+
+.form-link-box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    width:100%;
+    max-width:500px;
+    margin:0 auto;
+    padding:22px;
+    background:#f5f5f5;
+    border:2px solid #e5e5e5;
+    border-radius:18px;
+    text-decoration:none;
+    color:#333;
+    font-size:22px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.form-link-box:hover{
+    border-color:#43b849;
+    transform:translateY(-2px);
+}
+
+.form-link-box img{
+    width:55px;
+    height:55px;
+}
+
+/* ================= BOTÃO ================= */
+
+.next-button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin:50px auto 0;
+    background:#43b849;
+    color:#ffffff;
+    border:none;
+    border-radius:15px;
+    padding:15px 25px;
+    width:260px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.next-button:hover{
+    background:#37963c;
+}
+
+.next-button img{
+    width:20px;
+    height:20px;
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media(max-width:768px){
+
+    .container{
+        margin:20px;
+        padding:40px 20px;
+    }
+
+    .support-content h1{
+        font-size:28px;
+    }
+
+    .form-link-box{
+        font-size:18px;
+        padding:18px;
+    }
+
+    .form-link-box img{
+        width:45px;
+        height:45px;
+    }
+
+}
