@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+        rel='stylesheet'>
+
+    <title>Recuperar senha</title>
+
+    <link rel="icon" href="./img/logo.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="./img/logo.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="senha.css">
+    <script type="module" src="senha.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="header-left">
+            <a href="tela_inicial.html">
+                <img
+                    src="./img/Logobonita.png"
+                    alt="Logo ConnectNutri"
+                    class="logoprincipal">
+            </a>
+        </div>
+    </header>
+
+    <!-- CONTAINER -->
+    <div class="container">
+
+        <!-- SETA VOLTAR -->
+        <a href="index.html" class="back-arrow">
+            <img src="./img/seta.png" alt="Voltar">
+        </a>
+
+        <!-- CONTEÚDO -->
+        <div class="support-content">
+
+            <h1>Digite seu E-mail</h1>
+
+            <p>Enviaremos um link para você redefinir sua senha.</p>
+
+            <!-- CAMPO DE EMAIL -->
+            <div class="input-box">
+                <input
+                    type="email"
+                    id="email-recuperacao"
+                    placeholder="Digite seu e-mail"
+                    required>
+                <i class='bx bx-envelope'></i>
+            </div>
+
+            <!-- BOTÃO PRÓXIMO -->
+            <button
+                class="next-button"
+                id="confirmar-formulario">
+                <span>PRÓXIMO</span>
+                <img src="./img/setaseguir.png" alt="Ícone de seguir">
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

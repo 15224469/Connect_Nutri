@@ -298,3 +298,151 @@ main{
     }
 
 }
+
+@media (max-width: 768px) {
+
+    main {
+        padding: 20px 15px;
+    }
+
+    .container {
+        padding: 20px 15px;
+        gap: 20px;
+        border-radius: 20px;
+    }
+
+    /* HEADER */
+    .main-header {
+        padding: 15px 20px;
+    }
+
+    .logoprincipal {
+        width: 80px;
+    }
+
+    .menu-item {
+        padding: 8px 12px;
+        border-radius: 10px;
+    }
+
+    .menu-item img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .menu-item span {
+        font-size: 12px;
+    }
+
+    /* CALENDÁRIO */
+    #calendar {
+        padding: 15px 10px;
+        border-radius: 15px;
+    }
+
+    .fc-toolbar-title {
+        font-size: 16px !important;
+    }
+
+    .fc {
+        font-size: 12px;
+    }
+
+    /* HORÁRIOS */
+    .time-slots-container {
+        padding: 15px;
+    }
+
+    .time-slots-container h2 {
+        font-size: 16px;
+    }
+
+    .time-slot {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    /* DETALHES */
+    .appointment-details {
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .appointment-details h2 {
+        font-size: 20px;
+    }
+
+    .form-control {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .textarea-control {
+        font-size: 14px;
+        min-height: 100px;
+    }
+
+    .confirm-button {
+        height: 50px;
+        font-size: 15px;
+    }
+
+}
+
+/* ================= CELULAR PEQUENO ================= */
+
+@media (max-width: 380px) {
+
+    main {
+        padding: 15px 10px;
+    }
+
+    .container {
+        padding: 15px 10px;
+        border-radius: 15px;
+    }
+
+    .logoprincipal {
+        width: 70px;
+    }
+
+    .menu-item {
+        padding: 6px 10px;
+    }
+
+    .menu-item span {
+        font-size: 11px;
+    }
+
+    .fc-toolbar-title {
+        font-size: 14px !important;
+    }
+
+    .fc {
+        font-size: 11px;
+    }
+
+    .time-slot {
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+    .appointment-details h2 {
+        font-size: 18px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-control,
+    .textarea-control {
+        font-size: 13px;
+    }
+
+    .confirm-button {
+        height: 45px;
+        font-size: 14px;
+    }
+
+}

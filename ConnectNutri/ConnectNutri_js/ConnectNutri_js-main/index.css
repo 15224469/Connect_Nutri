@@ -159,3 +159,50 @@ body{
 .animate-eye{
     animation:eye-animation 0.3s ease;
 }
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 380px) {
+
+    .container {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .logoprincipal {
+        width: 170px;
+        margin-bottom: 20px;
+    }
+
+    .input-box input {
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .login,
+    .register {
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .remember-forgot {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        padding: 35px 25px;
+    }
+
+    .logoprincipal {
+        width: 190px;
+    }
+
+    .input-box {
+        margin-bottom: 20px;
+    }
+
+}

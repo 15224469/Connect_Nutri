@@ -132,3 +132,99 @@ body{
     }
 
 }
+
+/* ================= RESPONSIVIDADE ================= */
+
+@media (max-width: 768px) {
+
+    body {
+        align-items: flex-start;
+        padding: 20px 15px;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .logo-confirmacao {
+        width: 100px;
+    }
+
+    .img-confirmado {
+        width: 70px;
+    }
+
+    .confirmation-images p:first-of-type {
+        font-size: 22px;
+    }
+
+    .confirmation-images p:last-of-type {
+        font-size: 15px;
+    }
+
+    .options-container {
+        gap: 15px;
+    }
+
+    .option-box {
+        max-width: 100%;
+        height: 60px;
+        font-size: 15px;
+        border-radius: 14px;
+    }
+
+}
+
+
+
+@media (max-width: 380px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .container {
+        margin: 15px auto;
+        padding: 25px 15px;
+        border-radius: 15px;
+    }
+
+    .logo-confirmacao {
+        width: 85px;
+        margin-bottom: 15px;
+    }
+
+    .img-confirmado {
+        width: 60px;
+        margin-bottom: 15px;
+    }
+
+    .confirmation-images p:first-of-type {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .confirmation-images p:last-of-type {
+        font-size: 13px;
+    }
+
+    .options-container {
+        gap: 12px;
+        margin-top: 25px !important;
+    }
+
+    .option-box {
+        height: 55px;
+        font-size: 14px;
+        gap: 10px;
+        border-radius: 12px;
+    }
+
+    .option-box img {
+        width: 25px;
+        height: 25px;
+    }
+
+}

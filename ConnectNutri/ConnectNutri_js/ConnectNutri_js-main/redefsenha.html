@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Redefinir Senha</title>
+    <link rel="icon" href="./img/logo.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="./img/logo.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="redefsenha.css">
+    <script type="module" src="redefsenha.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="header-left">
+            <a href="index.html">
+                <img src="./img/Logobonita.png" alt="Logo ConnectNutri" class="logoprincipal">
+            </a>
+        </div>
+    </header>
+
+    <!-- CONTAINER -->
+    <div class="container">
+
+        <div class="support-content">
+
+            <h1>Redefinir Senha</h1>
+
+            <p>Digite e confirme sua nova senha abaixo.</p>
+
+            <!-- NOVA SENHA -->
+            <div class="input-box">
+                <input
+                    type="password"
+                    id="nova-senha"
+                    placeholder="Nova senha"
+                    required>
+                <i class='bx bxs-hide' id="toggle-nova-senha"></i>
+            </div>
+
+            <!-- CONFIRMAR SENHA -->
+            <div class="input-box">
+                <input
+                    type="password"
+                    id="confirmar-senha"
+                    placeholder="Confirmar nova senha"
+                    required>
+                <i class='bx bxs-hide' id="toggle-confirmar-senha"></i>
+            </div>
+
+            <!-- BOTÃO -->
+            <button class="next-button" id="btn-redefinir">
+                <span>CONFIRMAR</span>
+                <img src="./img/setaseguir.png" alt="Ícone de seguir">
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

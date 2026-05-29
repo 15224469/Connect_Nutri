@@ -116,3 +116,92 @@ input:focus {
 .finalize-button:hover {
     background-color: #43b849;
 }
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+        padding: 30px 25px;
+        border-radius: 25px;
+        margin: 120px auto 30px auto;
+    }
+
+    .logoprincipal {
+        width: 140px;
+        top: 15px;
+    }
+
+    .setaVoltar {
+        width: 55px;
+        height: 55px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .form-grid {
+        margin-top: 100px;
+    }
+
+    input {
+        height: 45px;
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    .checkbox-termos label {
+        font-size: 14px;
+    }
+
+    .finalize-button {
+        font-size: 18px;
+        padding: 13px 50px;
+    }
+
+}
+
+/* Celular pequeno (iPhone SE, Galaxy A) */
+@media (max-width: 380px) {
+
+    .container {
+        width: 95%;
+        padding: 25px 18px;
+        border-radius: 20px;
+    }
+
+    .logoprincipal {
+        width: 120px;
+        top: 12px;
+    }
+
+    .setaVoltar {
+        width: 45px;
+        height: 45px;
+        top: 18px;
+        left: 15px;
+    }
+
+    .form-grid {
+        margin-top: 90px;
+    }
+
+    input {
+        height: 42px;
+        font-size: 14px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
+
+    .checkbox-termos label {
+        font-size: 12px;
+        gap: 6px;
+    }
+
+    .finalize-button {
+        font-size: 16px;
+        padding: 12px 35px;
+        width: 100%;
+    }
+
+}

@@ -1,3 +1,9 @@
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+
+const supabaseUrl = "https://asorsiryghfeaaacurai.supabase.co";
+const supabaseKey = "sb_publishable_3Kqws8GOkvFPeTdN7vk5Mw_PPk2UppT";
+const supabase = createClient(supabaseUrl, supabaseKey);
+
 document.addEventListener('DOMContentLoaded', function () {
 
     const calendarEl = document.getElementById('calendar');
@@ -166,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
     SALVAR AGENDAMENTO
     =============================== */
 
-    window.salvarAgendamento = function () {
+    window.salvarAgendamento = async function () {
 
         const nomePaciente =
             document.getElementById(
@@ -240,7 +246,20 @@ document.addEventListener('DOMContentLoaded', function () {
         /* ===============================
         SALVAR TEMPORARIAMENTE
         =============================== */
-
+        const { data, error } = await supabase
+            .from('consultas')
+            .insert([
+                {
+                    paciente_id: (await supabase.auth.getUser()).data.user.id,
+                    nome_paciente: nomePaciente,
+                    data_consulta: dataSelecionada,
+                    horario: horarioSelecionado,
+                    tipo_atendimento: tipoAtendimento,
+                    motivo: motivoConsulta,
+                    status: "pendente"
+                }
+            ])
+            .select()
         localStorage.setItem(
 
             'agendamentoPendente',

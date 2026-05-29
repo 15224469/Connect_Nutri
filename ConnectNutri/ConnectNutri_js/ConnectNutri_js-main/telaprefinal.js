@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // vai para consultas
         window.location.href =
-            "consultas.html";
+            "finalização.html";
 
     });
 

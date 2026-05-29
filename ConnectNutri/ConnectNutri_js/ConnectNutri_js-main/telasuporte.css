@@ -244,3 +244,186 @@ main{
     }
 
 }
+
+/* ================= RESPONSIVIDADE ================= */
+
+
+@media (max-width: 1100px) {
+
+    .main-header {
+        height: auto;
+        padding: 20px;
+    }
+
+    .header-left {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-menu {
+        justify-content: center;
+    }
+
+    .container {
+        padding: 30px 20px;
+    }
+
+    .support-content h1 {
+        font-size: 28px;
+    }
+
+}
+
+/* ================= CELULAR MÉDIO ================= */
+
+@media (max-width: 768px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* HEADER compacto em linha */
+    .main-header {
+        padding: 10px 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-left {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .logoprincipal {
+        width: 75px;
+    }
+
+    .main-menu {
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .menu-item {
+        padding: 7px 12px;
+        border-radius: 10px;
+        gap: 6px;
+    }
+
+    .menu-item img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .menu-item span {
+        font-size: 11px;
+    }
+
+    /* PERFIL alinhado à direita */
+    .user-menu-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .profile-pic {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* CONTAINER ocupa a tela toda */
+    .container {
+        flex: 1;
+        margin: 15px;
+        padding: 25px 20px;
+        border-radius: 20px;
+        align-items: flex-start;
+    }
+
+    main {
+        padding: 15px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .support-content {
+        width: 100%;
+    }
+
+    .support-content h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+
+    .support-content h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .info-box {
+        font-size: 15px;
+        padding: 14px;
+        margin-bottom: 20px;
+        border-radius: 14px;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .main-header {
+        padding: 8px 12px;
+    }
+
+    .logoprincipal {
+        width: 65px;
+    }
+
+    .menu-item {
+        padding: 6px 9px;
+    }
+
+    .menu-item span {
+        font-size: 10px;
+    }
+
+    .menu-item img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .profile-pic {
+        width: 35px;
+        height: 35px;
+    }
+
+    .container {
+        margin: 10px;
+        padding: 20px 15px;
+        border-radius: 15px;
+    }
+
+    .support-content h1 {
+        font-size: 17px;
+    }
+
+    .support-content h2 {
+        font-size: 14px;
+    }
+
+    .info-box {
+        font-size: 13px;
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+
+}

@@ -198,3 +198,126 @@ body{
     }
 
 }
+
+/* ================= RESPONSIVIDADE ================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 80px;
+    }
+
+    .main-header {
+        height: 70px;
+        padding: 0 20px;
+    }
+
+    .logoprincipal {
+        width: 80px;
+    }
+
+    .cancel-button {
+        padding: 8px 14px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+
+    .cancel-button img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .container {
+        margin: 15px;
+        padding: 40px 20px 30px 20px;
+        border-radius: 20px;
+    }
+
+    .back-arrow img {
+        width: 35px;
+    }
+
+    .support-content h1 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .form-link-box {
+        font-size: 16px;
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .form-link-box img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .next-button {
+        width: 100%;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+
+}
+
+/* ================= CELULAR PEQUENO ================= */
+
+@media (max-width: 380px) {
+
+    body {
+        padding-top: 70px;
+    }
+
+    .main-header {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    .logoprincipal {
+        width: 70px;
+    }
+
+    .cancel-button {
+        padding: 6px 10px;
+        font-size: 12px;
+        gap: 6px;
+    }
+
+    .cancel-button span {
+        display: none;
+    }
+
+    .container {
+        margin: 10px;
+        padding: 35px 15px 25px 15px;
+        border-radius: 15px;
+    }
+
+    .back-arrow img {
+        width: 30px;
+    }
+
+    .support-content h1 {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .form-link-box {
+        font-size: 14px;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .form-link-box img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .next-button {
+        font-size: 14px;
+        padding: 13px 20px;
+        margin-top: 25px;
+    }
+
+}
