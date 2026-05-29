@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Cadastro</title>
+
+  <link rel="icon" href="./img/logo.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="./img/logo.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="./img/logo.png">
+
+  <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<script type="module" src="cadastro.js"></script>
+
+<body>
+
+  <main class="container">
+
+    <form class="formulario" id="form-cadastro">
+
+      <a href="index.html">
+        <img src="./img/seta.png" alt="Seta voltar" class="setaVoltar">
+      </a>
+
+      <img src="./img/Logobonita.png" alt="Logo ConnectNutri" class="logoprincipal">
+
+      <div class="form-grid">
+
+        <div class="coluna-esquerda">
+
+          <input placeholder="Nome Completo" type="text" name="nome" required>
+
+        </div>
+
+        <div class="coluna-direita">
+
+          <input placeholder="Email" type="email" name="email" required>
+
+          <input placeholder="Senha" type="password" name="senha" required>
+
+          <input placeholder="Confirmar Senha" type="password" name="confirmarsenha" required>
+
+          <input placeholder="Telefone" type="tel" name="telefone" required>
+
+          <div class="checkbox-termos">
+            <label>
+              <input type="checkbox" name="termos" required value="aceito">
+              Eu li e concordo com os termos de uso
+            </label>
+          </div>
+
+        </div>
+
+      </div>
+
+      <button type="submit" class="finalize-button">
+        Finalizar cadastro
+      </button>
+
+    </form>
+
+  </main>
+
+</body>
+</html>

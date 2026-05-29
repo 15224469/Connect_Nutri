@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Meus Agendamentos</title>
+
+    <link rel="icon" href="./img/logo.png" type="image/png">
+
+    <link rel="stylesheet" href="consultas.css">
+
+    <script src="consultas.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="main-header">
+
+        <div class="header-left">
+
+            <a href="agendamento.html">
+
+                <img
+                    src="./img/Logobonita.png"
+                    alt="Logo ConnectNutri"
+                    class="logoprincipal">
+
+            </a>
+
+            <!-- ================= MENU ================= -->
+
+            <nav class="main-menu">
+
+                <a
+                    href="agendamento.html"
+                    class="menu-item"
+                    id="menu-inicio">
+
+                    <img
+                        src="./img/Inicio.png"
+                        alt="Ícone Início">
+
+                    <span>INÍCIO</span>
+
+                </a>
+
+                <a
+                    href="telasuporte.html"
+                    class="menu-item"
+                    id="menu-suporte">
+
+                    <img
+                        src="./img/Suporte.png"
+                        alt="Ícone Suporte">
+
+                    <span>SUPORTE</span>
+
+                </a>
+
+                <a
+                    href="consultas.html"
+                    class="menu-item active"
+                    id="menu-consultas">
+
+                    <img
+                        src="./img/Calendario.png"
+                        alt="Ícone Consultas">
+
+                    <span>CONSULTAS</span>
+
+                </a>
+
+            </nav>
+
+        </div>
+
+        <!-- ================= PERFIL ================= -->
+
+        <div class="user-menu-wrapper">
+
+            <div class="profile-section" id="profile-btn">
+
+                <span>Perfil</span>
+
+                <img
+                    src="./img/Perfil.png"
+                    alt="Foto do Perfil"
+                    class="profile-pic">
+
+                <i
+                    class='bx bx-chevron-down'
+                    style="color:#333;font-size:20px;">
+                </i>
+
+            </div>
+
+            <!-- ================= DROPDOWN ================= -->
+
+            <div class="profile-dropdown" id="profile-dropdown">
+
+                <a
+                    href="#"
+                    id="logout-btn"
+                    class="dropdown-item">
+
+                    <i class='bx bx-log-out'></i>
+
+                    <span>Sair da Conta</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= CONTAINER ================= -->
+
+    <div class="container">
+
+        <h1 class="titulo">
+            Minhas Consultas
+        </h1>
+
+        <!-- ================= LISTA ================= -->
+
+        <div class="lista-consultas">
+
+            <!-- ================= CONSULTA ================= -->
+
+            <div class="consulta-item">
+
+                <h2>Consulta de Avaliação</h2>
+
+                <p>
+                    <b>Paciente:</b>
+                    Brenda Rafaely
+                </p>
+
+                <p>
+                    <b>Tipo de atendimento:</b>
+                    Nutrição para Adulto
+                </p>
+
+                <p>
+                    <b>Horário:</b>
+                    08:00
+                </p>
+
+                <p>
+                    <b>Data:</b>
+                    10/12/2025
+                </p>
+
+                <button class="cancelar-btn">
+
+                    Cancelar Consulta
+
+                </button>
+
+            </div>
+
+            <!-- ================= CONSULTA ================= -->
+
+            <div class="consulta-item">
+
+                <h2>Retorno Nutricional</h2>
+
+                <p>
+                    <b>Paciente:</b>
+                    Brenda Rafaely
+                </p>
+
+                <p>
+                    <b>Tipo de atendimento:</b>
+                    Nutrição Esportiva
+                </p>
+
+                <p>
+                    <b>Horário:</b>
+                    10:30
+                </p>
+
+                <p>
+                    <b>Data:</b>
+                    22/12/2025
+                </p>
+
+                <button class="cancelar-btn">
+
+                    Cancelar Consulta
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= MODAL ================= -->
+
+    <div class="modal" id="cancelar-modal">
+
+        <div class="modal-content">
+
+            <h2>Cancelar Consulta</h2>
+
+            <textarea
+                id="motivo-cancelamento"
+                placeholder="Informe o motivo do cancelamento...">
+            </textarea>
+
+            <div class="modal-buttons">
+
+                <button
+                    class="confirmar-cancelamento"
+                    id="confirmar-cancelamento">
+
+                    Confirmar Cancelamento
+
+                </button>
+
+                <button
+                    class="fechar-modal"
+                    id="fechar-modal">
+
+                    Fechar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
